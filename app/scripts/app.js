@@ -144,7 +144,7 @@
             }
             var query = { locus: locus };
             Agave.api.adama.search(
-                {'namespace': 'aip', 'service': 'locus_gene_report_v0.2.0', 'queryParams': query},
+                {'namespace': 'araport', 'service': 'locus_gene_report_v0.2.0', 'queryParams': query},
                 function(search) {
                     el.popover({title: 'Gene Report: ' + locus,
                                 content: templates.geneReportPopover(search.obj.result[0]),
@@ -175,7 +175,7 @@
 
         geneReportHandler();
 
-        $('.gene_results table', appContext).dataTable( {'lengthMenu': [5, 10, 25, 50, 100]} );
+        $('.gene_results table', appContext).DataTable( {'lengthMenu': [5, 10, 25, 50, 100]} );
     };
 
     //draw expression comparison table
@@ -191,7 +191,7 @@
 
         geneReportHandler();
 
-        $('.comp_results table', appContext).dataTable( {'lengthMenu': [5, 10, 25, 50, 100]} );
+        $('.comp_results table', appContext).DataTable( {'lengthMenu': [5, 10, 25, 50, 100]} );
     };
 
     // draw reporter image table
