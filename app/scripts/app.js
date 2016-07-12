@@ -355,6 +355,7 @@
         $('#expression_transcript', appContext)[0].selectize.clearOptions();
         $('#expression_transcript', appContext)[0].selectize.clear(true);
         $('#expression_tissue').val('none');
+        $('a[href="#d_about"]', appContext).tab('show');
     });
 
     $('#expression_comp_form_reset').on('click', function() {
@@ -363,6 +364,7 @@
         $('#fold_change').val('');
         $('#expression_tissue1').val('');
         $('#expression_tissue2').val('');
+        $('a[href="#d_about"]', appContext).tab('show');
     });
 
     $('#reporter_image_form_reset').on('click', function() {
@@ -370,6 +372,7 @@
         $('.reporter_image_results').empty();
         $('#ri_gene', appContext)[0].selectize.clearOptions();
         $('#ri_gene', appContext)[0].selectize.clear(true);
+        $('a[href="#d_about"]', appContext).tab('show');
     });
 
     $('form[name=reporter_image_form]').on('submit', function(e) {

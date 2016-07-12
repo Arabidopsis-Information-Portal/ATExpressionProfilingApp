@@ -1,0 +1,16 @@
+{
+  "namespace" : "atexpressionprofilingapp",
+  "name": "AT Expression Profiling App",
+  "description": "Display expression reports and reporter images from the 2010 Arabidopsis expression project at JCVI.",
+  "html": "app.html",
+  "scripts": [
+    "scripts/app.js"
+  ],
+  "styles": [
+    "styles/app.css"
+  ],
+  "tags": [
+    "arabidopsis", "expression", "qPCR", "GFP", "reporter"
+  ],
+  "icon": "app/images/logo.png"
+}

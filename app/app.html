@@ -3,8 +3,8 @@
     <div id="expression_viewer">
 
         <ul id="ev_tabs" class="nav nav-tabs" role="tablist">
-            <li id="t_about"><a href="#d_about" role="tab" data-toggle="tab">About</a></li>
-            <li id="t_expression_gene" class="active"><a href="#d_expression_gene" role="tab" data-toggle="tab">Gene Expression</a></li>
+            <li id="t_about" class="active"><a href="#d_about" role="tab" data-toggle="tab">About</a></li>
+            <li id="t_expression_gene"><a href="#d_expression_gene" role="tab" data-toggle="tab">Gene Expression</a></li>
             <li id="t_expression_comp"><a href="#d_expression_comp" role="tab" data-toggle="tab">Expression Comparison</a></li>
             <li id="t_reporter_images"><a href="#d_reporter_images" role="tab" data-toggle="tab">Reporter Images</a></li>
         </ul>
@@ -12,7 +12,7 @@
         <div class="error"></div>
 
         <div id="ev_tab_content" class="tab-content">
-            <div class="tab-pane" id="d_about">
+            <div class="tab-pane fade in active" id="d_about">
                 <h3>Completing the Expression Catalog of the Arabidopsis Transcriptome by Quantitative Real Time PCR</h3>
                 <br>
                 <div class="container">
@@ -36,7 +36,7 @@
                 </div>
             </div>
 
-            <div class="tab-pane active" id="d_expression_gene">
+            <div class="tab-pane" id="d_expression_gene">
 
                 <h3>Enter an Arabidopsis transcript identifier and choose a tissue (or treatment) to view the expression report</h3>
                 <form name="expression_gene_form" role="form">
